@@ -3,6 +3,7 @@ package com.tcjk.application;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -22,5 +23,7 @@ public class MainActivity extends Activity {
 
     @OnClick(R.id.text_view)
     public void onViewClicked() {
+
+        Toast.makeText(this,"click",Toast.LENGTH_SHORT).show();
     }
 }
