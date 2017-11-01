@@ -2,6 +2,7 @@ package com.tcjk.application;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,6 +14,8 @@ public class MainActivity extends Activity {
 
     @BindView(R.id.text_view)
     TextView textView;
+    @BindView(R.id.btn)
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,6 @@ public class MainActivity extends Activity {
     @OnClick(R.id.text_view)
     public void onViewClicked() {
 
-        Toast.makeText(this,"click",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "click", Toast.LENGTH_SHORT).show();
     }
 }
