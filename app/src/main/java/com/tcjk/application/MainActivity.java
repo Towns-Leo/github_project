@@ -3,9 +3,11 @@ package com.tcjk.application;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainActivity extends Activity {
 
@@ -17,5 +19,11 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+    }
+
+    @OnClick(R.id.text_view)
+    public void onViewClicked() {
+
+        Toast.makeText(this,"click",Toast.LENGTH_LONG).show();
     }
 }
