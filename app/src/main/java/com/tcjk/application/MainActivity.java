@@ -33,6 +33,6 @@ public class MainActivity extends Activity {
     @OnClick(R.id.btn)
     public void onBtnClicked() {
 
-        Toast.makeText(this, "btnClick333", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "btnClick555", Toast.LENGTH_SHORT).show();
     }
 }
