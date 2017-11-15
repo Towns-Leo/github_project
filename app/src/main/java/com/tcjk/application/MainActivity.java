@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
     @OnClick(R.id.text_view)
     public void onViewClicked() {
 
-        Toast.makeText(this, "click111", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "click1112", Toast.LENGTH_SHORT).show();
     }
 
     @OnClick(R.id.btn)
